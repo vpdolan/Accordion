@@ -7,11 +7,12 @@ body {
   height: 600px; }
 
 .topsection, .middlesection, .bottomsection {
-  height: 36px;
-  overflow: hidden; }
+  height: 38px;
+  overflow: hidden;
+  transition: height 1s; }
 
 .grow {
-  height: 180px;
+  height: 195px;
   overflow: hidden; }
 
 a {
@@ -32,4 +33,5 @@ h2:hover {
 p {
   color: #BCBCBC;
   padding-left: 15px;
-  padding-right: 20px; }
+  padding-right: 20px;
+  color: blue; }
