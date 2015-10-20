@@ -1,67 +1,73 @@
-/*
-$headercolor: #5C85FF;
-$paragraphtext: #BCBCBC;
-*/
-
+/*Define Accordion box*/
 body {
-  border: 2px solid line black;
-}
+  width: 100%; }
 
-.container {
-  width: 500px;
-  border: 2px solid #3E3ECC;
-  height: 256px;
-
-}
-
-.section {
-  height: 38px;
+.accordion {
+  width: 35%;
   overflow: hidden;
-  transition: height 1s;
-}
+  color: #474747;
+  border: 2px solid blue; }
 
-.grow {
-  height: 180px;
+.accordion section {
+  float: left;
   overflow: hidden;
-}
+  color: #333;
+  cursor: pointer;
+  background: #333;
+  padding-top: -2px;
+  width: 100%;
+  height: 66px;
+  transition: height 3s; }
 
-a {
-  text-decoration: none;
-}
+.accordion section h2 {
+  margin: 0; }
 
-h2 {
+.accordion section p {
+  padding-left: 8px;
+  padding-right: 5px;
+  font-size: 17px; }
+
+.accordion section.show {
+  background: #FFF;
+  height: 235px; }
+
+.accordion section.show {
+  background: #FFF; }
+
+.accordion section.show h2 {
+  width: 100%;
+  margin: auto;
+  background-color: #1C2E64; }
+
+.accordion section.show h2 a {
+  padding-left: 20px;
+  color: red; }
+
+.accordion section.show p {
+  display: block;
+  height: 70px; }
+
+.accordion section h2 a {
+  display: block;
+  font-size: 1.0em;
+  font-weight: normal;
   color: white;
-  background-color: #5C85FF;
-  padding-top: 0px;
-  padding-left: 25px;
-  border-top: 1px solid #3E3ECC;
-  height: 40px;
-  margin: 0;
-}
+  background-color: blue;
+  height: 50px;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-top: 15px;
+  border-bottom: 1px solid red;
+  border-top: 1px solid red;
+  border-left: 1px solid red;
+  border-right: 1px solid red; }
 
-h2:hover {
-  background-color: #AFC4FF;
-}
+.accordion section h2 a:hover {
+  background-color: #3399FF; }
 
-p {
-  color: #BCBCBC;
-  padding-left: 15px;
-  padding-right: 20px;
-}
+.vertical section:after {
+  top: -60px;
+  left: 150px; }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
+.vertical section:target:after {
+  left: -999px; }

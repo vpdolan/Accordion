@@ -1,62 +1,181 @@
-/*
-$headercolor: #5C85FF;
-$paragraphtext: #BCBCBC;
-*/
+ // $headercolor: #5C85FF;
+ // $paragraphtext: #BCBCBC; 
+
+
+
+//  .accordioncontainer {
+//   width: 650px;
+//   height: 256px;
+
+// }
+
+// h2 {
+//   background-color: blue;
+//   padding-top: 0px;
+//   text-indent: 20px;
+//   border-top: 1px solid #3E3ECC;
+//   height: 40px;
+//   margin: 0;
+// }
+
+// h2:hover {
+//   background-color: #AFC4FF;
+// }
+
+// .sectionone a {
+//   width: 100%;
+//   height: 38px;
+//   overflow: hidden;
+//   //transition: height 1s;
+// }
+
+// .sectiontwo a {
+//   width: 100%;
+//   height: 50px;
+//   overflow: hidden;
+// }
+
+// .sectionthree a {
+//   width: 100%;
+//   height: 50px;
+//   overflow: hidden;
+// }
+
+// .grow {
+//   height: 180px;
+//   overflow: hidden;
+// }
+
+
+
+
+// p {
+//   color: #BCBCBC;
+//   padding-left: 15px;
+//   padding-right: 20px;
+// }
+
+
+/*Define Accordion box*/
 
 body {
-  border: 2px solid line black;
-}
-
-.container {
-  width: 500px;
-  border: 2px solid #3E3ECC;
-  height: 256px;
+  width: 100%;
 
 }
-
-.section {
-  height: 38px;
-  overflow: hidden;
-  transition: height 1s;
+.accordion { 
+     width:35%;
+     overflow:hidden; 
+     //margin: auto; 
+     color:#474747; 
+     //background: yellow;
+     border: 2px solid blue;  
 }
 
-.grow {
-  height: 180px;
-  overflow: hidden;
+  .accordion section  { 
+      float:left;
+      overflow: hidden; 
+      color: #333; 
+      cursor: pointer; 
+      background: #333; 
+      //padding-left: 1px;
+      //padding-right: 1px;
+      padding-top: -2px;
+      width: 100%;
+      //padding-bottom: 7px;
+
+      height: 66px;
+      transition: height 3s;
+
+}
+.accordion section h2 {
+  margin:0;
 }
 
-a {
-  text-decoration: none;
-}
-
-h2 {
-  color: white;
-  background-color: #5C85FF;
-  padding-top: 0px;
-  padding-left: 25px;
-  border-top: 1px solid #3E3ECC;
-  height: 40px;
-  margin: 0;
-}
-
-h2:hover {
-  background-color: #AFC4FF;
-}
-
-p {
-  color: #BCBCBC;
-  padding-left: 15px;
-  padding-right: 20px;
+.accordion section p {
+  //display: none;
+  padding-left: 8px;
+  padding-right: 5px;
+  font-size: 17px;
 }
 
 
+.accordion section.show { 
+      background:#FFF; 
+      height: 235px;
+      
+}
+.accordion section.show { 
+      background:#FFF; 
+}
+.accordion section.show h2 {
+      width:100%;
+      margin: auto;
+      background-color: #1C2E64;
+}
+.accordion section.show h2 a{ 
+      //color:#333; 
+      padding-left: 20px;
+      color: red;    
+}
 
+.accordion section.show p {
+      display: block;
+      height: 70px;
+}
+//.accordion #sectiontwo.show p {
+//      display: block;
+//      height: 80px;
+      //padding-bottom: 6px;
+//.accordion #sectionthree.show p{
+//      display: block;
+//      height: 80px;
+//      padding-bottom: 9px;
+//}
+.accordion section h2 a {
+      //padding:8px 10px;
+      display:block; 
+      font-size: 1.0em; 
+      font-weight:normal;
+      color: white;
+      background-color: blue;
+      height: 50px; 
+      text-decoration:none;
+      padding-left: 20px;
+      padding-top: 15px;
+      border-bottom: 1px solid red;
+      border-top: 1px solid red;
+      border-left: 1px solid red;
+      border-right: 1px solid red;
+      //border: 1 1 1 1 solid red; 
+}
+.accordion section h2 a:hover {
+      background-color: #3399FF;
+}
 
+//.vertical section {
+  //width: 100%;
+ // height: 55px;
+//}
 
+//.vertical :target {
+ // height: 180px;
+  //width: 90%;
+//}
 
+//.vertical section h2 {
+  //position: relative;
+  //left: 0;
+  //top: -15px;
+//}
 
+.vertical section:after {
+  top: -60px;
+  left: 150px;
+}
 
-
+.vertical section:target:after {
+  left: -999px;
+}
 
 
 
